@@ -2,9 +2,11 @@ import kotlin.math.max
 import kotlin.math.min
 
 fun main() {
+    val tripleSpace = " ".repeat(3) // just in case git decides to fuck me up
+
     fun part1(input: List<String>): Int {
         var i = 0
-        val split = input.map { it.split(",").map(String::toInt) }
+        val split = input.map { it.split(tripleSpace).map(String::toInt) }
 
         val left = split.map { it[0] }.sorted()
         val right = split.map { it[1] }.sorted()
@@ -20,7 +22,7 @@ fun main() {
 
     fun part2(input: List<String>): Int {
         var i = 0
-        val split = input.map { it.split(",").map(String::toInt) }
+        val split = input.map { it.split(tripleSpace).map(String::toInt) }
 
         val left = split.map { it[0] }.sorted()
         val right = split.map { it[1] }.sorted()

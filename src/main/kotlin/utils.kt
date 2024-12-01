@@ -6,10 +6,10 @@ import kotlin.io.path.readText
  */
 fun readInput(name: String) = Path("src/inputs/$name.txt").readText().trim().lines()
 
-fun <T> List<T>.occurrences(t: T): Int {
+fun <T> List<T>.occurrences(elem: T): Int {
     var i = 0
     forEach {
-        if (it == t) i++
+        if (it == elem) i++
     }
 
     return i
