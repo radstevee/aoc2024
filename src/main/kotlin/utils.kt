@@ -1,5 +1,6 @@
 import kotlin.io.path.Path
 import kotlin.io.path.readText
+import kotlin.math.max
 import kotlin.math.min
 
 /**
@@ -16,7 +17,7 @@ fun <T> List<T>.occurrences(elem: T): Int {
     return i
 }
 
-fun diff(a: Int, b: Int) = min(a, b) - min(a, b)
+fun diff(a: Int, b: Int) = max(a, b) - min(a, b)
 
 fun List<Int>.isIncreasing(maxDiff: Int): Boolean {
     if (this.size < 2) return true
