@@ -1,5 +1,3 @@
-import java.time.chrono.JapaneseEra.values
-
 fun main() {
     fun part1(input: List<String>): Int {
         var i = 0
