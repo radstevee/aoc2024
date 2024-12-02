@@ -14,7 +14,7 @@ fun main() {
         for (idx in 0 until left.size) {
             val l = left[idx]
             val r = right[idx]
-            i += max(l, r) - min(l, r)
+            i += diff(l, r)
         }
 
         return i
